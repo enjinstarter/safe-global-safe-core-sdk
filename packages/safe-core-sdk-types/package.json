@@ -1,6 +1,6 @@
 {
   "name": "@enjinstarter/safe-global-safe-core-sdk-types",
-  "version": "1.6.1+ejs.0.1.0",
+  "version": "1.6.1-ejs.0.1.0",
   "description": "Safe Core SDK types",
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
@@ -42,7 +42,7 @@
   "dependencies": {
     "@ethersproject/bignumber": "^5.7.0",
     "@ethersproject/contracts": "^5.7.0",
-    "@enjinstarter/safe-global-safe-deployments": "1.16.0",
+    "@enjinstarter/safe-global-safe-deployments": "1.16.0-ejs.0.1.0",
     "web3-core": "^1.8.0",
     "web3-utils": "^1.8.0"
   }

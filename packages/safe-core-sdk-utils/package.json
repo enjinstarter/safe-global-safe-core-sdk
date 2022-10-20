@@ -1,6 +1,6 @@
 {
   "name": "@enjinstarter/safe-global-safe-core-sdk-utils",
-  "version": "1.4.1+ejs.0.1.0",
+  "version": "1.4.1-ejs.0.1.0",
   "description": "Safe Core SDK Utilities",
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
@@ -32,7 +32,7 @@
   ],
   "homepage": "https://github.com/enjinstarter/safe-global-safe-core-sdk#readme",
   "devDependencies": {
-    "@enjinstarter/safe-global-safe-deployments": "1.16.0",
+    "@enjinstarter/safe-global-safe-deployments": "1.16.0-ejs.0.1.0",
     "@types/chai": "^4.3.3",
     "@types/chai-as-promised": "^7.1.5",
     "@types/mocha": "^9.1.1",
@@ -52,7 +52,7 @@
     "typescript": "^4.8.3"
   },
   "dependencies": {
-    "@enjinstarter/safe-global-safe-core-sdk-types": "^1.6.1",
+    "@enjinstarter/safe-global-safe-core-sdk-types": "^1.6.1-ejs.0.1.0",
     "semver": "^7.3.7",
     "web3-utils": "^1.8.0"
   }

@@ -1,6 +1,6 @@
 {
   "name": "@enjinstarter/safe-global-safe-ethers-adapters",
-  "version": "0.1.0-alpha.11",
+  "version": "0.1.0-alpha.11.ejs.0.1.0",
   "description": "Safe Ethers Adapters",
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
@@ -78,9 +78,9 @@
     "@ethersproject/properties": "^5.5.0"
   },
   "dependencies": {
-    "@enjinstarter/safe-global-safe-core-sdk": "^3.1.1",
-    "@enjinstarter/safe-global-safe-core-sdk-types": "^1.6.1",
-    "@enjinstarter/safe-global-safe-deployments": "1.16.0",
+    "@enjinstarter/safe-global-safe-core-sdk": "^3.1.1-ejs.0.1.0",
+    "@enjinstarter/safe-global-safe-core-sdk-types": "^1.6.1-ejs.0.1.0",
+    "@enjinstarter/safe-global-safe-deployments": "1.16.0-ejs.0.1.0",
     "axios": "^0.27.2"
   }
 }
