@@ -3,9 +3,9 @@ import {
   MetaTransactionData,
   SafeTransactionDataPartial,
   TransactionOptions
-} from '@gnosis.pm/safe-core-sdk-types'
-import { EthersTransactionOptions } from '@gnosis.pm/safe-ethers-lib'
-import { Web3TransactionOptions } from '@gnosis.pm/safe-web3-lib'
+} from '@enjinstarter/safe-global-safe-core-sdk-types'
+import { EthersTransactionOptions } from '@enjinstarter/safe-global-safe-ethers-lib'
+import { Web3TransactionOptions } from '@enjinstarter/safe-global-safe-web3-lib'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import { deployments, waffle } from 'hardhat'
@@ -352,7 +352,7 @@ describe('Transactions execution', () => {
         const tx = await safeSdk1.createTransaction({ safeTransactionData })
         const execOptions: EthersTransactionOptions = {
           gasLimit: 123456,
-          gasPrice: 170000000
+          gasPrice: 200000000
         }
         const txResponse = await safeSdk1.executeTransaction(tx, execOptions)
         await waitSafeTxReceipt(txResponse)
@@ -454,7 +454,7 @@ describe('Transactions execution', () => {
         const tx = await safeSdk1.createTransaction({ safeTransactionData })
         const execOptions: Web3TransactionOptions = {
           gas: 123456,
-          gasPrice: 170000000
+          gasPrice: 200000000
         }
         const txResponse = await safeSdk1.executeTransaction(tx, execOptions)
         await waitSafeTxReceipt(txResponse)

@@ -1,7 +1,8 @@
+import dotenv from "dotenv";
 import { getDefaultProvider } from '@ethersproject/providers'
 import { Wallet } from '@ethersproject/wallet'
-import Safe from '@gnosis.pm/safe-core-sdk'
-import { EthAdapter, SafeTransactionDataPartial } from '@gnosis.pm/safe-core-sdk-types'
+import Safe from '@enjinstarter/safe-global-safe-core-sdk'
+import { EthAdapter, SafeTransactionDataPartial } from '@enjinstarter/safe-global-safe-core-sdk-types'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import sinon from 'sinon'
@@ -20,6 +21,8 @@ import config from '../utils/config'
 import { getServiceClient } from '../utils/setupServiceClient'
 chai.use(chaiAsPromised)
 chai.use(sinonChai)
+
+dotenv.config();
 
 const safeAddress = '0x9D1E7371852a9baF631Ea115b9815deb97cC3205'
 const eip3770SafeAddress = `${config.EIP_3770_PREFIX}:${safeAddress}`

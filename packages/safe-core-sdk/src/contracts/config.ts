@@ -1,7 +1,7 @@
-import { SafeVersion } from '@gnosis.pm/safe-core-sdk-types'
+import { SafeVersion } from '@enjinstarter/safe-global-safe-core-sdk-types'
 
 export const SAFE_LAST_VERSION: SafeVersion = '1.3.0'
-export const SAFE_BASE_VERSION: SafeVersion = '1.1.1'
+export const SAFE_BASE_VERSION: SafeVersion = '1.3.0'
 
 type SafeDeploymentsVersions = {
   [version: string]: {
@@ -20,23 +20,8 @@ export const safeDeploymentsVersions: SafeDeploymentsVersions = {
     safeProxyFactoryVersion: '1.3.0',
     multiSendVersion: '1.3.0',
     multiSendCallOnlyVersion: '1.3.0'
-  },
-  '1.2.0': {
-    safeMasterCopyVersion: '1.2.0',
-    safeMasterCopyL2Version: undefined,
-    safeProxyFactoryVersion: '1.1.1',
-    multiSendVersion: '1.1.1',
-    multiSendCallOnlyVersion: '1.3.0'
-  },
-  '1.1.1': {
-    safeMasterCopyVersion: '1.1.1',
-    safeMasterCopyL2Version: undefined,
-    safeProxyFactoryVersion: '1.1.1',
-    multiSendVersion: '1.1.1',
-    multiSendCallOnlyVersion: '1.3.0'
   }
 }
 
-export const safeDeploymentsL1ChainIds = [
-  1 // Ethereum Mainnet
+export const safeDeploymentsL1ChainIds: number[] = [
 ]

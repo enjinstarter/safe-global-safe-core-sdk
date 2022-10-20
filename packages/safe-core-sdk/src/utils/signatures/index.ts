@@ -2,7 +2,7 @@ import {
   EthAdapter,
   SafeSignature,
   SafeTransactionEIP712Args
-} from '@gnosis.pm/safe-core-sdk-types'
+} from '@enjinstarter/safe-global-safe-core-sdk-types'
 import { bufferToHex, ecrecover, pubToAddress } from 'ethereumjs-util'
 import { sameString } from '../../utils'
 import EthSignSignature from './SafeSignature'

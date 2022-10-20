@@ -1,5 +1,5 @@
 {
-  "name": "safe-core-sdk",
+  "name": "safe-global-safe-core-sdk",
   "private": true,
   "scripts": {
     "clean": "lerna clean",

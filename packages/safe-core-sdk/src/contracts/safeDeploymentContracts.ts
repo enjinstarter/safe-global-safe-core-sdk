@@ -5,7 +5,7 @@ import {
   MultiSendCallOnlyContract,
   MultiSendContract,
   SafeVersion
-} from '@gnosis.pm/safe-core-sdk-types'
+} from '@enjinstarter/safe-global-safe-core-sdk-types'
 import {
   DeploymentFilter,
   getMultiSendCallOnlyDeployment,
@@ -14,7 +14,7 @@ import {
   getSafeL2SingletonDeployment,
   getSafeSingletonDeployment,
   SingletonDeployment
-} from '@gnosis.pm/safe-deployments'
+} from '@enjinstarter/safe-global-safe-deployments'
 import { ContractNetworkConfig } from '../types'
 import { safeDeploymentsL1ChainIds, safeDeploymentsVersions } from './config'
 

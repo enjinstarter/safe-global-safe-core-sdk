@@ -1,7 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { GnosisSafeProxyFactoryContract } from '@gnosis.pm/safe-core-sdk-types'
+import { GnosisSafeProxyFactoryContract } from '@enjinstarter/safe-global-safe-core-sdk-types'
 import { TransactionReceipt } from 'web3-core/types'
-import { Proxy_factory as ProxyFactory_V1_1_1 } from '../../../typechain/src/web3-v1/v1.1.1/Proxy_factory'
 import { Proxy_factory as ProxyFactory_V1_3_0 } from '../../../typechain/src/web3-v1/v1.3.0/Proxy_factory'
 import { Web3TransactionOptions } from '../../types'
 import { toTxResult } from '../../utils'
@@ -15,7 +14,7 @@ export interface CreateProxyProps {
 }
 
 class GnosisSafeProxyFactoryWeb3Contract implements GnosisSafeProxyFactoryContract {
-  constructor(public contract: ProxyFactory_V1_3_0 | ProxyFactory_V1_1_1) {}
+  constructor(public contract: ProxyFactory_V1_3_0) {}
 
   getAddress(): string {
     return this.contract.options.address

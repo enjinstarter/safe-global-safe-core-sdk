@@ -7,7 +7,7 @@ import {
   OperationType,
   SafeTransactionData,
   SafeTransactionDataPartial
-} from '@gnosis.pm/safe-core-sdk-types'
+} from '@enjinstarter/safe-global-safe-core-sdk-types'
 import { ZERO_ADDRESS } from '../constants'
 import { FEATURES, hasFeature } from '../safeVersions'
 import { estimateTxGas } from './gas'

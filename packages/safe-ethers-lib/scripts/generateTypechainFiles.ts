@@ -13,7 +13,7 @@ const outDirTests = 'typechain/tests/'
 
 // Contract list for which the Typechain files will be generated
 // Will be included in dist/ folder
-const safeContractsPath = '../../node_modules/@gnosis.pm/safe-deployments/dist/assets'
+const safeContractsPath = '../../node_modules/@enjinstarter/safe-global-safe-deployments/dist/assets'
 
 const safeContracts_V1_3_0 = [
   `${safeContractsPath}/v1.3.0/gnosis_safe.json`,
@@ -21,26 +21,14 @@ const safeContracts_V1_3_0 = [
   `${safeContractsPath}/v1.3.0/multi_send.json`,
   `${safeContractsPath}/v1.3.0/multi_send_call_only.json`
 ].join(' ')
-const safeContracts_V1_2_0 = [`${safeContractsPath}/v1.2.0/gnosis_safe.json`].join(' ')
-const safeContracts_V1_1_1 = [
-  `${safeContractsPath}/v1.1.1/gnosis_safe.json`,
-  `${safeContractsPath}/v1.1.1/proxy_factory.json`,
-  `${safeContractsPath}/v1.1.1/multi_send.json`
-].join(' ')
 
 // Won't be included in dist/ folder
-const safeContractsTestV1_2_0Path =
-  '../../node_modules/@gnosis.pm/safe-contracts-v1.2.0/build/contracts'
 const openZeppelinContractsPath = '../../node_modules/openzeppelin-solidity/build/contracts'
-const testContracts_V1_2_0 = [
-  `${safeContractsTestV1_2_0Path}/DailyLimitModule.json`,
-  `${safeContractsTestV1_2_0Path}/SocialRecoveryModule.json`,
-  `${openZeppelinContractsPath}/ERC20Mintable.json`
-].join(' ')
 const safeContractsTestV1_3_0Path =
-  '../../node_modules/@gnosis.pm/safe-contracts-v1.3.0/build/artifacts/contracts'
+  '../../node_modules/@enjinstarter/safe-global-safe-contracts-v1.3.0/build/artifacts/contracts'
 const testContracts_V1_3_0 = [
-  `${safeContractsTestV1_3_0Path}/examples/guards/DebugTransactionGuard.sol/DebugTransactionGuard.json`
+  `${safeContractsTestV1_3_0Path}/examples/guards/DebugTransactionGuard.sol/DebugTransactionGuard.json`,
+  `${openZeppelinContractsPath}/ERC20Mintable.json`
 ].join(' ')
 
 // Remove existing Typechain files
@@ -79,21 +67,10 @@ const ethersV5 = 'ethers-v5'
 
 // Src: Ethers V5 types
 generateTypechainFiles(ethersV5, `${outDirSrc}${ethersV5}/v1.3.0`, safeContracts_V1_3_0)
-generateTypechainFiles(ethersV5, `${outDirSrc}${ethersV5}/v1.2.0`, safeContracts_V1_2_0)
-generateTypechainFiles(ethersV5, `${outDirSrc}${ethersV5}/v1.1.1`, safeContracts_V1_1_1)
 moveTypechainFiles(
   `${typeChainDirectorySrcPath}${ethersV5}/v1.3.0`,
   `${typeChainDirectoryBuildPath}${ethersV5}/v1.3.0`
 )
-moveTypechainFiles(
-  `${typeChainDirectorySrcPath}${ethersV5}/v1.2.0`,
-  `${typeChainDirectoryBuildPath}${ethersV5}/v1.2.0`
-)
-moveTypechainFiles(
-  `${typeChainDirectorySrcPath}${ethersV5}/v1.1.1`,
-  `${typeChainDirectoryBuildPath}${ethersV5}/v1.1.1`
-)
 
 // Tests: Ethers V5 types
-generateTypechainFiles(ethersV5, `${outDirTests}${ethersV5}/v1.2.0`, testContracts_V1_2_0)
 generateTypechainFiles(ethersV5, `${outDirTests}${ethersV5}/v1.3.0`, testContracts_V1_3_0)
