@@ -1,6 +1,6 @@
 {
   "name": "@enjinstarter/safe-global-safe-ethers-lib",
-  "version": "1.6.1-ejs.0.1.0",
+  "version": "1.6.1-ejs.0.1.1",
   "description": "Ethers library adapter to be used by Safe Core SDK",
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
@@ -28,7 +28,8 @@
     "url": "https://github.com/enjinstarter/safe-global-safe-core-sdk/issues"
   },
   "files": [
-    "dist"
+    "dist",
+    "dist/typechain"
   ],
   "homepage": "https://github.com/enjinstarter/safe-global-safe-core-sdk#readme",
   "devDependencies": {

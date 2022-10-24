@@ -1,6 +1,6 @@
 {
   "name": "@enjinstarter/safe-global-safe-core-sdk",
-  "version": "3.1.1-ejs.0.1.0",
+  "version": "3.1.1-ejs.0.1.1",
   "description": "Safe Core SDK",
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
@@ -36,8 +36,8 @@
   "homepage": "https://github.com/enjinstarter/safe-global-safe-core-sdk#readme",
   "devDependencies": {
     "@enjinstarter/safe-global-safe-contracts-v1.3.0": "npm:@enjinstarter/safe-global-safe-contracts@1.3.0-ejs.0.1.0",
-    "@enjinstarter/safe-global-safe-ethers-lib": "^1.6.1-ejs.0.1.0",
-    "@enjinstarter/safe-global-safe-web3-lib": "^1.6.1-ejs.0.1.0",
+    "@enjinstarter/safe-global-safe-ethers-lib": "^1.6.1-ejs.0.1.1",
+    "@enjinstarter/safe-global-safe-web3-lib": "^1.6.1-ejs.0.1.1",
     "@nomiclabs/hardhat-ethers": "^2.1.1",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
     "@nomiclabs/hardhat-web3": "^2.0.0",
